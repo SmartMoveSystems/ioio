@@ -105,12 +105,12 @@ def libraries = [
 ]
 
 def applications = [
-//        'HelloIOIO'          : ['packageDebug'],
-//        'HelloIOIOService'   : ['packageDebug'],
-//        'IOIOSimpleApp'      : ['packageDebug'],
-//        'HelloIOIOConsole': ['distJar'],
-//        'HelloIOIOSwing'  : ['distJar'],
-//        'HelloSequencer'  : ['distJar']
+        'HelloIOIO'          : ['packageDebug'],
+        'HelloIOIOService'   : ['packageDebug'],
+        'IOIOSimpleApp'      : ['packageDebug'],
+        'HelloIOIOConsole': ['distJar'],
+        'HelloIOIOSwing'  : ['distJar'],
+        'HelloSequencer'  : ['distJar']
 ]
 
 def gitFiles(dirs) {
@@ -125,7 +125,7 @@ task bundle(type: Zip) {
 
     into('src') {
         from fileTree('.').include(gitFiles(libraries.keySet()*.concat('/src'))).exclude('.git*')
-//        from fileTree('.').include(gitFiles(applications.keySet())).exclude('.git*')
+        from fileTree('.').include(gitFiles(applications.keySet())).exclude('.git*')
     }
 
     libraries.each { entry ->
