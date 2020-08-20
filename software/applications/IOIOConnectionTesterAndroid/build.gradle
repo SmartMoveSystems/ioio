@@ -22,8 +22,8 @@ android {
 
 dependencies {
   compile project(':IOIOConnectionTester')
-  compile 'com.github.ytai.ioio:IOIOLibAndroid:5.07'
-  compile 'com.github.ytai.ioio:IOIOLibAndroidBluetooth:5.07'
-  compile 'com.github.ytai.ioio:IOIOLibAndroidAccessory:5.07'
+  compile 'com.github.ytai.ioio:IOIOLibAndroid:5.08'
+  compile 'com.github.ytai.ioio:IOIOLibAndroidBluetooth:5.08'
+  compile 'com.github.ytai.ioio:IOIOLibAndroidAccessory:5.08'
 }
 
